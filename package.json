@@ -1,5 +1,5 @@
 {
-  "name": "testing-excercise",
+  "name": "jesting-excercise",
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
@@ -11,7 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0",
-    "jest": "^27.4.0",
-    "node-fetch": "^3.1.0"
+    "jest": "^27.4.0"
   }
 }
