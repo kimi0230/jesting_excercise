@@ -32,7 +32,7 @@ it("getPeople returns count and results", () => {
     })
   );
 
-  // expect.assertions(4);
+  expect.assertions(4);
   return swapi.getPeople(mockFetch).then((data) => {
     expect(mockFetch.mock.calls.length).toBe(1);
     expect(mockFetch).toBeCalledWith("http://swapi.py4e.com/api/people");
@@ -53,7 +53,7 @@ it("getPeoplePromise returns count and results", () => {
     })
   );
 
-  // expect.assertions(4);
+  expect.assertions(4);
   return swapi.getPeoplePromise(mockFetch).then((data) => {
     expect(mockFetch.mock.calls.length).toBe(1);
     expect(mockFetch).toBeCalledWith("http://swapi.py4e.com/api/people");
