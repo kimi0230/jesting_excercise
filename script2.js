@@ -4,7 +4,6 @@ const axios = require("axios");
 
 const getPeople = async (axios) => {
   const getRequest = await axios("http://swapi.py4e.com/api/people");
-  console.log("-------", getRequest.data.results.length);
   const data = getRequest.data;
   return {
     count: data.count,
@@ -13,8 +12,7 @@ const getPeople = async (axios) => {
 };
 
 const getPeoplePromise = (axios) => {
-  return axios
-    .get("http://swapi.py4e.com/api/people")
+  return axios("http://swapi.py4e.com/api/people")
     .then(function (response) {
       return {
         count: response.data.count,
